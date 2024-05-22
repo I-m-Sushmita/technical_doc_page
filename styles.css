@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    font-size: 2em;
+    margin: 0.5em 0;
+    text-align: center;
+    background-color: rgb(56 30 43);
+    color: #f4f4f4;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.bold{
+    font-size: 1.2rem;
+}
+nav {
+    background: rgb(56 30 43);
+    color: #fff;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    line-height: 2.8rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main-section {
+    padding: 1em;
+    margin-top: 2em;
+}
+
+code {
+    display: block;
+    background: #f4f4f4;
+    padding: 0.5em;
+    border-left: 4px solid #333;
+    margin: 1em 0;
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    nav {
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+    }
+
+    #main-doc {
+        margin-left: 25%;
+        padding: 2em;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        width: 30%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+    }
+
+    #main-doc {
+        margin-left: 30%;
+        padding: 2em;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1em 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin: 0.2em 0;
+    }
+
+    #main-doc {
+        margin: 0;
+        padding: 1em;
+    }
+
+    header {
+        font-size: 1.8em;
+    }
+}

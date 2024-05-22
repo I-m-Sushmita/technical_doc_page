@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentetion Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>C Documentetion</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Difference Between C and C++?">Difference Between C and C++?</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Syntax">Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Output(Print Text)">Output(Print Text)</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring-variables">Declaring-variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data Types">Data types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Constants">Constants</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Operators">Operators</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#If..else statement">If..else statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Switch Statement">Switch Statement</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#While-Loop">While-Loop</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Function">Function</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <h1>What is C?</h1>
+                <P>C is a general-purpose programming language developed in 1972 by Dennis Ritchie at the Bell Telephone
+                    Laboratories.
+                </P>
+                <p>
+                    C is strongly associated with UNIX, as it wasdeveloped to write the UNIX operating system.
+                </p>
+                <h1>Why Learn C?</h1>
+                <ul>
+                    <li>It is one of the most popular programming languages in the world.</li>
+                    <li>If you know C, you will have no problem learning other popular programming languages such as
+                        Java, Python, C++, C#, etc, as the syntax is similar.</li>
+                    <li>C is very fast, compared to other programming languages, like <span
+                            class="underline">Java</span> and <span
+                            class="underline">Python</span>.</li>
+                    <li>C is very versatile; it can be used in both applications and technologies.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Difference Between C and C++? Section -->
+
+        <section class="main-section" id="Difference Between C and C++?">
+            <header>Difference Between C and C++ ?</header>
+            <article>
+                <p>C++ was developed as an extension of C, and both languages have almost the same syntax.</p>
+                <p>Here are some key differences:</p>
+                <ul>
+                    <li>The main difference between C and C++ is that C++ support classes and objects, while C does not
+                    </li>
+                    <li>C++ has larger standard library compared to C.</li>
+                    <li>C++ supports exception handling using try,catch,and throw,which is not avilable in C.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Syntax Section -->
+
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <article>
+                <p>To get started with writing C language,open the <span class="bold">VS Code</span> and
+                    write your first code <span class="red">"Hello World !"</span> :</p>
+                <code>
+                    "#include <stdio.h>
+                      <span class="blue">int</span> main() {
+                      printf(<span class="purple">"Hello World!"</span>);
+                      <span class="blue">return</span> <span class="red">0</span>;
+                    }"
+                </code>
+                <p>Select the code in the pad and press <span class="bold">ctrl+R</span> to watch the
+                    output. </p>
+            </article>
+        </section>
+
+        <!-- Output(Print Text) Section -->
+
+        <section class="main-section" id="Output(Print Text)">
+            <header>Output(Print Text)</header>
+            <article>
+                <p>To output values or print text in C, you can use the <span class="red">printf()</span>
+                    function:</p>
+                <h4>Example</h4>
+                <code>#include <stdio.h>
+
+                        int main() {
+                            <spanclass="red">printf()</span>("Hello World!");
+                          return 0;
+                        }</code>
+            </article>
+        </section>
+
+        <!-- Variables Section -->
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables are containers for storing data values, like numbers and characters.</p>
+                <p>In C, there are different <span class="bold">types</span> of variables (defined with
+                    different keywords), for example:</p>
+                <ul>
+                    <li><span class="red">int</span> - stores integers (whole numbers), without decimals, such
+                        as <span class="red">123</span> or <span class="red">-123</span></li>
+                    <li><span class="red">float</span> - stores floating point numbers, with decimals, such as
+                        <span class="red">19.99</span> or <span class="red">-19.99</span>
+                    </li>
+                    <li><span class="red">char</span> - stores single characters, such as <span class="red">'a'</span>
+                        or <span class="red">'B'</span>. Characters are
+                        surrounded by single quotes</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Declaring-variables Section -->
+
+        <section class="main-section" id="Declaring-variables">
+            <header>Declaring-variables</header>
+            <article>
+                <p>To create a variable, specify the <span class="bold">type</span> and assign it a <span
+                        class="bold">value</span>:</p>
+                <h3>Syntax</h3>
+                <p>type variableName = value;</p>
+                <p>Where type is one of C types (such as <span class="red">int</span>) and variableName is the
+                    name of the variable (such as <span class="bold">x</span>
+                    or <span class="bold">myName</span>).The <span class="bold">equal
+                        sign</span> is used to assign a value to the variable.</p>
+                <p>So, to create a variable that should <span class="bold">store a number</span>, look at
+                    the following example:
+                </p>
+                <h4>Example</h4>
+                <p>Create a variable called <span class="bold">myNum</span> of type <span class="red">int</span> and
+                    assign the value <span class="bold">10</span>
+                    to it:</p>
+                <p><span class="red">int</span> myNum = <span class="blue">10</span></p>
+            </article>
+        </section>
+
+        <!-- Data Types Section -->
+
+        <section class="main-section" id="Data Types">
+            <header>Data Types</header>
+            <article>
+                <p>In c programming, data types define the type of data a variable can hold.</p>
+                <p>Here's a quick summarynof the main data types:</p>
+                <p class="bold">1. Basic Data Types:</p>
+                <ul>
+                    <li>int: For integers(e.g.,10,-5).</li>
+                    <li>char: For characters(e.g., 'a','B','1').</li>
+                    <li>float: For floating-point numbers(e.g., 3.14, -0.001).</li>
+                    <li>double: For double-precision floating-point numbers(e.g., 3.14159, -0.0001).</li>
+                    <li>_Bool: For boolean values(true or false).</li>
+                </ul>
+                <p class="bold">2. Derived Data Types:</p>
+                <ul>
+                    <li>Array: Collectionof similar data types.</li>
+                    <li>Pointer: Stores memory addresses.</li>
+                    <li>Structure: Combines different data types under a single name.</li>
+                    <li>Union: Stores one value at a time,useful for different data types in the same memory location.
+                    </li>
+                </ul>
+                <p class="bold">3. Enumeration Data Types:</p>
+                <ul>
+                    <li>Allows defining named constant (e.g., days of the week).</li>
+                </ul>
+                <p class="bold">4. Void Data Type:</p>
+                <ul>
+                    <li>Indicates no value available, often used in function that do not return a value.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Constants section  -->
+
+        <section class="main-section" id="Constants">
+            <header>Constants</header>
+            <article>
+                <p>If you don't want others (or yourself) to change existing variable values, you can use the <span
+                        class="red">const</span> keyword.</p>
+                <p>This will declare the variable as "constant", which means <span class="bold">unchangeable</span> and
+                    <span class="bold">read-only</span>:</p>
+                <p class="bold">Example:</p>
+                <code><span class="blue">const</span> int myNum = <span class="red">15</span>;  <span class="green">// myNum will always be 15</span>
+    myNum = <span class="red">10</span>;  <span class="green">// error: assignment of read-only variable 'myNum'</span></code>
+            </article>
+        </section>
+
+        <!-- Operators Section -->
+
+        <section class="main-section" id="Operators">
+            <header>Operators</header>
+            <article>
+                <p>Operators in the C programming language are symbols that perform operations on operands. They play a
+                    crucial role in manipulating data and controlling the flow of a program. C provides a rich set of
+                    operators, classified into several categories based on their functionality.</p>
+                <p>C divides the operators into the following groups:</p>
+                <ul>
+                    <li>Arithmetic operators</li>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Logical operators</li>
+                    <li>Bitwise operators</li>
+                </ul>
+                <p class="bold">Example:</p>
+                <code><span class="blue">int</span> myNum = <span class="red">100+20</span>;</code>
+            </article>
+        </section>
+
+        <!-- If..else statement section -->
+
+        <section class="main-section" id="If..else statement">
+            <header>If..else statement</header>
+            <article>
+                <p>The if-else statement in c is used to make decisions in your code based on specified condition.It's
+                    basic syntax is:</p>
+                <code><span class="blue">if</span>(condition){
+                    <span class="green">//code to be executed if condition is true}</span>
+            else{
+                <span class="green">//code to be executed if condition is false</span>
+            }
+           </code>
+            </article>
+        </section>
+
+        <!-- Switch Statement Section -->
+
+        <section class="main-section" id="Switch Statement">
+            <header>Switch Statement</header>
+            <article>
+                <p>Instead of writing many <span class="red">if..else</span> statements, you can use the <span
+                        class="red">switch</span> statement.</p>
+                <p>The <span class="red">switch</span> statement selects one of many code blocks to be executed:
+                </p>
+                <p class="bold">syntax</p>
+                <code><span class="blue">switch</span> (expression) {
+                    <span class="blue">case</span> x:
+                    <span class="green">// code block</span>
+                              <span class="blue">break</span>;
+                              <span class="blue">case</span> y:
+                              <span class="green">// code block</span>
+                              <span class="blue">break</span>;
+                              <span class="blue">default</span>:
+                              <span class="green">// code block</span>
+                          }</code>
+            </article>
+        </section>
+
+        <!-- While-Loop Section -->
+
+        <section class="main-section" id="While-Loop">
+            <header>While-Loop</header>
+            <article>
+                <p>The <span class="bold">"while"</span> loop ic C is a fundamental tool for executing a
+                    block of code repeatedly based on a
+                    condition. It's syntax is straightforward: </p>
+                <code>
+                    <span class="blue"> while</span>(condition){<br>
+                        <span class="green">//code block to be executed</span><br>
+            }
+           </code>
+            </article>
+        </section>
+
+        <!-- Function Section -->
+
+        <section class="main-section" id="Function">
+            <header>Function</header>
+            <article>
+                <p>Function in C are essential for code organization and reusability. Here's a brief overview:</p>
+                <ul>
+                    <li><span class="bold">Declaration:</span> Functions are declared with a name, returne
+                        type,and parameters(if any)</li>
+                    <li><span class="bold">Definition:</span> Function contain the actual code to perform
+                        a task.</li>
+                    <li><span class="bold">Calling:</span> Function are called by name, with arguments if
+                        required.</li>
+                    <li><span class="bold">Return:</span> Function can return a value using the 'return'
+                        statement.</li>
+                    <li><span class="bold">Parameters:</span> Function can take zero or more parameters.
+                    </li>
+                    <li><span class="bold">Prototypes:</span> Function prototypes can be used to declare
+                        functions before their definitions.
+                    </li>
+                    <li><span class="bold">Recursion:</span> C supports recursive functions for tasks that
+                        can be broken down into smaller
+                        subproblems.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
