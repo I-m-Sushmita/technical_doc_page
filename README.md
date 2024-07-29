@@ -47,7 +47,7 @@ This section explains the syntax and use of the `while` loop for repeating a blo
 ## Function
 This section covers functions in C, including their declaration, definition, calling, parameters, return values, and recursion.
 ## Usage
-To view the documentation, simply open the  https://i-m-sushmita.github.io/technical_documentation_page/ 
+To view the documentation, simply open the  https://i-m-sushmita.github.io/technical_doc_page/ 
 
 This page is designed to be responsive and can be viewed on desktop, tablet, and mobile devices.
 
